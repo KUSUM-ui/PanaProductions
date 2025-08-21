@@ -1,328 +1,231 @@
-Here’s the full site structure with **five separate HTML files** and a shared `style.css`. Each page has consistent header/footer and links to the same stylesheet.
 
----
 
-### `index.html`
-```html
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lauren Ashley | Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lauren Ashley — Creative Portfolio</title>
+  <meta name="description" content="Portfolio homepage showcasing design work, case studies, and contact information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="/favicon.ico" />
+  
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Lauren Ashley</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">LA</span>
+        <span class="brand-text">Lauren Ashley</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu">
+          <span class="nav-bar"></span>
+          <span class="nav-bar"></span>
+          <span class="nav-bar"></span>
+        </button>
+        <ul id="primary-menu" class="menu">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact" class="btn btn--small">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to Lauren Ashley</h1>
-    <p>Creative solutions for your brand and business.</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Lauren Ashley. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-```
-
----
-
-### `about.html`
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lauren Ashley | About</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">Lauren Ashley</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="content">
-    <h1>About Me</h1>
-    <p>Lauren Ashley is a creative professional passionate about design, branding, and storytelling. With years of experience, she helps brands create meaningful connections through visuals and strategy.</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Lauren Ashley. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-```
-
----
-
-### `services.html`
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lauren Ashley | Services</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">Lauren Ashley</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="content">
-    <h1>Services</h1>
-    <ul>
-      <li>Brand Identity Design</li>
-      <li>Web & Digital Design</li>
-      <li>Content Strategy</li>
-      <li>Creative Consulting</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>© 2025 Lauren Ashley. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-```
-
----
-
-### `portfolio.html`
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lauren Ashley | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">Lauren Ashley</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html" class="active">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="content">
-    <h1>Portfolio</h1>
-    <p>Explore a selection of my past projects and collaborations.</p>
-    <div class="portfolio-grid">
-      <div class="project">Project 1</div>
-      <div class="project">Project 2</div>
-      <div class="project">Project 3</div>
-      <div class="project">Project 4</div>
+  <!-- Hero -->
+  <section class="hero" aria-label="Hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 class="hero-title">Crafting elegant, human‑centered design.</h1>
+        <p class="hero-sub">I help brands tell clear stories with timeless visuals and meticulous detail across web, product, and identity.</p>
+        <div class="hero-cta">
+          <a href="#work" class="btn">View Work</a>
+          <a href="#contact" class="btn btn--ghost">Let’s Talk</a>
+        </div>
+        <ul class="hero-stats" aria-label="Selected stats">
+          <li><span class="num">8+</span> years experience</li>
+          <li><span class="num">40+</span> projects delivered</li>
+          <li><span class="num">12</span> awards & features</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&q=80&auto=format&fit=crop" alt="Selected project collage" loading="eager" />
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Lauren Ashley. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-```
+  <!-- Featured Work -->
+  <section id="work" class="section section-work" aria-labelledby="work-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="work-title" class="section-title">Selected Work</h2>
+        <a href="#" class="link">See all case studies →</a>
+      </div>
 
----
+      <div class="grid projects">
+        <!-- Project Card 1 -->
+        <article class="card project">
+          <a href="#" class="card-link" aria-label="Open case study: Atelier Identity">
+            <div class="card-media ratio-16x9">
+              <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=1400&q=80&auto=format&fit=crop" alt="Monochrome logotype on textured paper" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Atelier Identity</h3>
+              <p class="card-meta">Brand Identity • Print • Guidelines</p>
+            </div>
+          </a>
+        </article>
 
-### `contact.html`
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lauren Ashley | Contact</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">Lauren Ashley</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <!-- Project Card 2 -->
+        <article class="card project">
+          <a href="#" class="card-link" aria-label="Open case study: Maison E‑commerce">
+            <div class="card-media ratio-16x9">
+              <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?w=1400&q=80&auto=format&fit=crop" alt="Elegant ecommerce website on laptop" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Maison E‑commerce</h3>
+              <p class="card-meta">UX/UI • Web Design • Shopify</p>
+            </div>
+          </a>
+        </article>
 
-  <section class="content">
-    <h1>Contact</h1>
-    <form>
-      <label>Name</label>
-      <input type="text" required>
-      <label>Email</label>
-      <input type="email" required>
-      <label>Message</label>
-      <textarea rows="5"></textarea>
-      <button type="submit">Send</button>
-    </form>
+        <!-- Project Card 3 -->
+        <article class="card project">
+          <a href="#" class="card-link" aria-label="Open case study: Serein App">
+            <div class="card-media ratio-16x9">
+              <img src="https://images.unsplash.com/photo-1556636530-5efc1f0a6f87?w=1400&q=80&auto=format&fit=crop" alt="Mobile app screens on neutral background" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Serein App</h3>
+              <p class="card-meta">Product Design • iOS • Design System</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project Card 4 -->
+        <article class="card project">
+          <a href="#" class="card-link" aria-label="Open case study: Editorial Lookbook">
+            <div class="card-media ratio-16x9">
+              <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=1400&q=80&auto=format&fit=crop" alt="Minimal editorial layout" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Editorial Lookbook</h3>
+              <p class="card-meta">Art Direction • Layout • Print</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Lauren Ashley. All rights reserved.</p>
+  <!-- About -->
+  <section id="about" class="section section-about" aria-labelledby="about-title">
+    <div class="container about-inner">
+      <div class="about-media">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80&auto=format&fit=crop" alt="Portrait of Lauren in studio" loading="lazy" />
+      </div>
+      <div class="about-copy">
+        <h2 id="about-title" class="section-title">Designer, art director, espresso enthusiast.</h2>
+        <p>
+          I’m Lauren, a multidisciplinary designer blending strategy with craft. From first sketch to final pixel, I partner with founders, agencies, and in‑house teams to build brands and products that feel effortless.
+        </p>
+        <ul class="ticks">
+          <li>Brand identity & systems</li>
+          <li>Web & product design</li>
+          <li>Art direction & editorial</li>
+        </ul>
+        <a href="#contact" class="btn">Start a project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section section-services" aria-labelledby="services-title">
+    <div class="container">
+      <h2 id="services-title" class="section-title">Services</h2>
+      <div class="grid services">
+        <article class="card service">
+          <h3 class="card-title">Brand Identity</h3>
+          <p>Positioning, naming, logos, typography, color, and complete brand kits with practical guidelines.</p>
+        </article>
+        <article class="card service">
+          <h3 class="card-title">Digital & Product</h3>
+          <p>Wireframes to high‑fidelity UI, component libraries, prototypes, and developer‑ready specs.</p>
+        </article>
+        <article class="card service">
+          <h3 class="card-title">Art Direction</h3>
+          <p>Photo direction, lookbooks, campaigns, and editorial layouts with a refined visual language.</p>
+        </article>
+        <article class="card service">
+          <h3 class="card-title">Websites</h3>
+          <p>Responsive marketing sites and ecommerce builds on modern, maintainable stacks.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section section-testimonials" aria-labelledby="testimonials-title">
+    <div class="container">
+      <h2 id="testimonials-title" class="section-title">Kind Words</h2>
+      <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Client testimonials">
+        <button class="carousel-prev" aria-label="Previous">‹</button>
+        <div class="carousel-track" aria-live="polite">
+          <figure class="testimonial is-active">
+            <blockquote>“Lauren brought clarity to our brand and executed flawlessly. Our conversion rate jumped 32%.”</blockquote>
+            <figcaption>— Alex Kim, CMO at Maison</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>“Thoughtful, fast, and exacting. The new identity elevated our presence with investors.”</blockquote>
+            <figcaption>— Priya Patel, Founder at Serein</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>“A collaborative partner from strategy to launch. Couldn’t recommend more.”</blockquote>
+            <figcaption>— Marco Rossi, Editorial Director</figcaption>
+          </figure>
+        </div>
+        <button class="carousel-next" aria-label="Next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section id="contact" class="section section-cta" aria-labelledby="contact-title">
+    <div class="container cta-inner">
+      <h2 id="contact-title" class="section-title">Have a project in mind?</h2>
+      <p>Let’s create something enduring together. I’m currently booking projects for the next quarter.</p>
+      <a href="mailto:hello@example.com" class="btn">Email Lauren</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">LA</span>
+        <span>© <span id="year"></span> Lauren Ashley. All rights reserved.</span>
+      </div>
+      <ul class="social">
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Dribbble">Dribbble</a></li>
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+      </ul>
+    </div>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
-```
 
----
 
-### `style.css` (shared)
-```css
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
-}
-
-header {
-  background: #111;
-  color: #fff;
-  padding: 1rem 2rem;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-  background: #f4a261;
-  border-radius: 4px;
-}
-
-.hero {
-  height: 80vh;
-  background: url('hero.jpg') center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
-
-section.content {
-  padding: 4rem 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.project {
-  background: #eee;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 6px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-form input, form textarea {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-form button {
-  padding: 0.75rem;
-  border: none;
-  background: #f4a261;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-form button:hover {
-  background: #e76f51;
-}
-
-footer {
-  background: #111;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-}
-```
-
----
-
-✅ This gives you **five working pages** with a unified look. 
-
-Do you also want me to add a **mobile-friendly menu (hamburger)** like the original site? Or keep it simple for now?

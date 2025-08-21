@@ -1,0 +1,130 @@
+
+
+
+/* ===== Base ===== */
+:root{
+  --bg: #fff;
+  --text: #111216;
+  --muted: #6b6f76;
+  --line: #e8eaee;
+  --brand: #111216; /* neutral/ink */
+  --accent: #b48a60; /* warm neutral */
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; color:var(--text); background:var(--bg);
+  font: 400 16px/1.7 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+img{max-width:100%; display:block}
+a{color:inherit; text-decoration:none}
+.container{width:min(1100px, 92%); margin-inline:auto}
+.section{padding:80px 0}
+.section-title{font:700 40px/1.2 "Playfair Display", serif; letter-spacing:-.01em; margin:0 0 24px}
+.link{display:inline-block; color:var(--muted)}
+
+/* ===== Header ===== */
+.site-header{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.8); backdrop-filter:saturate(180%) blur(12px); border-bottom:1px solid var(--line)}
+.header-inner{display:flex; align-items:center; justify-content:space-between; padding:16px 0}
+.brand{display:flex; align-items:center; gap:12px; font-weight:600}
+.brand-mark{display:grid; place-items:center; width:36px; height:36px; border-radius:50%; background:var(--text); color:#fff; font-weight:700}
+.brand-text{letter-spacing:.02em}
+
+.nav-toggle{display:none; background:none; border:0; padding:6px; cursor:pointer}
+.nav-bar{display:block; width:22px; height:2px; background:var(--text); margin:5px 0; transition:transform .25s ease}
+.menu{display:flex; gap:28px; align-items:center; list-style:none; margin:0; padding:0}
+.menu a{color:var(--text); opacity:.8}
+.menu a:hover{opacity:1}
+
+.btn{display:inline-block; padding:12px 18px; border-radius:999px; background:var(--text); color:#fff; box-shadow:var(--shadow); transition:transform .05s ease, opacity .2s}
+.btn:active{transform:translateY(1px)}
+.btn--ghost{background:transparent; color:var(--text); border:1px solid var(--line)}
+.btn--small{padding:10px 14px}
+
+/* ===== Hero ===== */
+.hero{padding:56px 0 24px; border-bottom:1px solid var(--line)}
+.hero-inner{display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center}
+.hero-title{font:700 clamp(36px, 5vw, 64px)/1.1 "Playfair Display", serif; margin:0 0 12px}
+.hero-sub{color:var(--muted); margin:0 0 24px; max-width:56ch}
+.hero-cta{display:flex; gap:12px; align-items:center; margin:0 0 18px}
+.hero-stats{display:flex; gap:28px; list-style:none; padding:0; margin:18px 0 0; color:var(--muted)}
+.hero-stats .num{display:block; font-weight:700; color:var(--text)}
+.hero-media{border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow)}
+
+/* ===== Work Grid ===== */
+.section-head{display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:24px}
+.projects{grid-template-columns:repeat(12, 1fr); gap:22px}
+.grid{display:grid}
+.card{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:#fff}
+.card-media{overflow:hidden}
+.ratio-16x9{position:relative; padding-top:56.25%}
+.ratio-16x9>img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .5s ease}
+.card:hover .ratio-16x9>img{transform:scale(1.05)}
+.card-body{padding:16px}
+.card-title{margin:0 0 6px; font-weight:600}
+.card-meta{margin:0; color:var(--muted)}
+
+/* Make a masonry-like layout */
+.projects>.project:nth-child(1){grid-column:span 6}
+.projects>.project:nth-child(2){grid-column:span 6}
+.projects>.project:nth-child(3){grid-column:span 5}
+.projects>.project:nth-child(4){grid-column:span 7}
+
+/* ===== About ===== */
+.section-about{background:#fafbfc; border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+.about-inner{display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center}
+.about-media{border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow)}
+.about-copy p{margin:0 0 12px; color:var(--muted)}
+.ticks{list-style:none; padding:0; margin:0 0 18px}
+.ticks li{position:relative; padding-left:26px; margin:10px 0}
+.ticks li::before{content:""; position:absolute; left:0; top:.6em; width:10px; height:10px; border-radius:50%; background:var(--accent)}
+
+/* ===== Services ===== */
+.services{grid-template-columns:repeat(4, 1fr); gap:18px}
+.service{padding:18px}
+.service p{color:var(--muted)}
+
+/* ===== Testimonials (simple carousel) ===== */
+.section-testimonials{background:#fff}
+.carousel{position:relative; border:1px solid var(--line); border-radius:var(--radius); padding:26px; overflow:hidden}
+.carousel-track{display:flex; transition:transform .4s ease}
+.testimonial{min-width:100%; margin:0}
+.testimonial blockquote{font:500 20px/1.5 "Playfair Display", serif; margin:0 0 8px}
+.testimonial figcaption{color:var(--muted)}
+.carousel-prev,.carousel-next{position:absolute; top:50%; transform:translateY(-50%); border:1px solid var(--line); background:#fff; width:40px; height:40px; border-radius:50%; display:grid; place-items:center; cursor:pointer}
+.carousel-prev{left:10px}
+.carousel-next{right:10px}
+
+/* ===== CTA ===== */
+.section-cta{background:#111216; color:#fff; text-align:center}
+.cta-inner p{color:#cfd3da}
+.section-cta .btn{background:#fff; color:#111216}
+
+/* ===== Footer ===== */
+.site-footer{border-top:1px solid var(--line); padding:28px 0}
+.footer-inner{display:flex; justify-content:space-between; align-items:center; gap:16px}
+.footer-brand{display:flex; align-items:center; gap:10px; color:var(--muted)}
+.social{display:flex; gap:16px; list-style:none; margin:0; padding:0}
+.social a{color:var(--muted)}
+.social a:hover{color:var(--text)}
+
+/* ===== Responsive ===== */
+@media (max-width: 980px){
+  .hero-inner{grid-template-columns:1fr; gap:28px}
+  .about-inner{grid-template-columns:1fr;}
+  .services{grid-template-columns:1fr 1fr}
+  .projects{grid-template-columns:repeat(6, 1fr)}
+  .projects>.project:nth-child(n){grid-column:span 6}
+}
+@media (max-width: 740px){
+  .menu{display:none}
+  .nav-toggle{display:block}
+  .menu.is-open{display:flex; position:absolute; top:64px; right:4%; left:4%; background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px; flex-direction:column; gap:12px; box-shadow:var(--shadow)}
+  .hero-stats{flex-wrap:wrap}
+  .services{grid-template-columns:1fr}
+  .footer-inner{flex-direction:column}
+}
+
+
