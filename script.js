@@ -48,8 +48,8 @@ for (const link of links){
 const hero = document.querySelector(".hero");
 const images = [
   "./pic1.jpg",
-  "./pic2.jpg",
-  "./pic3.JPG"
+  "./pic1.jpg",
+  "./pic1.JPG"
 ];
 
 let current = 0;
