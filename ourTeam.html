@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team | Photography</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    h1, h2 {
+      font-weight: 600;
+    }
+
+    .team-section {
+      padding: 80px 0;
+    }
+
+    .team-img {
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    .btn-book {
+      position: relative;
+      display: inline-block;
+      padding: 14px 40px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      background: #000;
+      border: none;
+      border-radius: 50px;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      margin-top: 40px;
+    }
+
+    .btn-book span {
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn-book::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 0%; height: 100%;
+      background: #fff;
+      z-index: 1;
+      transition: width 0.4s ease;
+      border-radius: 50px;
+    }
+
+    .btn-book:hover {
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    .btn-book:hover::after {
+      width: 100%;
+    }
+
+    .social-icons a {
+      color: #333;
+      margin-right: 15px;
+      margin-left: 20px;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #007bff;
+    }
+
+    .portfolio-btn {
+      margin-top: 15px;
+      padding: 10px 30px;
+      border-radius: 50px;
+      background-color: #000;
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-btn:hover {
+      background-color: #333;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="text-center py-5 bg-light">
+    <div class="container">
+      <h1 class="display-4 fw-bold" data-aos="fade-up">Our Team</h1>
+      <p class="lead text-muted mt-3" data-aos="fade-up" data-aos-delay="200">
+        Meet the creative minds behind our photography & videography. Passionate storytellers, capturing emotions with artistry.
+      </p>
+    </div>
+  </header>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="container">
+
+      <!-- Member 1 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?w=800" class="img-fluid team-img" alt="Alex Carter">
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h2>Alex Carter</h2>
+          <p class="text-muted fst-italic">Lead Photographer</p>
+          <p>
+            With over a decade of experience, Alex has mastered the art of capturing candid emotions and natural light. His vision makes every moment look timeless and elegant.
+          </p>
+          <div class="social-icons mb-2">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <button class="portfolio-btn">View Portfolio</button>
+        </div>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6" data-aos="fade-left">
+          <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=800" class="img-fluid team-img" alt="Sophia Williams">
+        </div>
+        <div class="col-md-6" data-aos="fade-right">
+          <h2>Sophia Williams</h2>
+          <p class="text-muted fst-italic">Videographer</p>
+          <p>
+            Sophia creates cinematic wedding films with heart. Her storytelling approach ensures your memories unfold like a beautiful movie, full of emotions and artistry.
+          </p>
+          <div class="social-icons mb-2">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <button class="portfolio-btn">View Portfolio</button>
+        </div>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6" data-aos="fade-right">
+          <img src="photos/DSC09390.jpg" class="img-fluid team-img" alt="Daniel Kim">
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h2>Daniel Kim</h2>
+          <p class="text-muted fst-italic">Photographer</p>
+          <p>
+            Daniel’s bold and artistic photography style transforms fleeting moments into magazine-worthy images. His creativity brings a unique edge to every shoot.
+          </p>
+          <div class="social-icons mb-2">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <button class="portfolio-btn">View Portfolio</button>
+        </div>
+      </div>
+
+      <!-- Member 4 -->
+      <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6" data-aos="fade-left">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800" class="img-fluid team-img" alt="Emily Johnson">
+        </div>
+        <div class="col-md-6" data-aos="fade-right">
+          <h2>Emily Johnson</h2>
+          <p class="text-muted fst-italic">Videographer</p>
+          <p>
+            Emily specializes in documentary-style videography, capturing raw emotions and genuine moments. Her films are heartfelt stories that last a lifetime.
+          </p>
+          <div class="social-icons mb-2">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <button class="portfolio-btn">View Portfolio</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-5 bg-light text-center">
+    <div class="container" data-aos="zoom-in">
+      <h2 class="fw-bold">Work With Our Team</h2>
+      <p class="text-muted mt-3">
+        Ready to create unforgettable memories with us? Book your date now and let’s make your story shine.
+      </p>
+      <button class="btn-book"><span>Book Your Date</span></button>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS + AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false
+    });
+  </script>
+</body>
+</html>

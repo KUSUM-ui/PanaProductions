@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Photography</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      background: url("https://www.transparenttextures.com/patterns/cubes.png") repeat fixed;
+      background-size: 120px;
+      font-family: 'Playfair Display', serif;
+    }
+    h1,h2,h3,h5 { font-weight: 600; }
+    .font-script { font-family: 'Great Vibes', cursive; }
+
+    /* Testimonials fade */
+    .testimonial {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.95);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .testimonial.active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+      position: absolute;
+    }
+    [data-aos] {
+      transition: all 1.2s ease !important;
+    }
+  </style>
+</head>
+<body class="text-gray-900 leading-relaxed">
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-6">
+    <h1 class="font-'Playfair Display' text-7xl mb-12 text-gray-900" data-aos="zoom-in" data-aos-duration="1200">PORTFOLIO</h1>
+    <!-- Floating Images -->
+    <img src="photos/DSC01468.jpg" class="absolute top-[250px] left-[15%] w-[300px] h-[500px] rounded-lg shadow-xl transition-transform duration-500 hover:scale-105 hover:shadow-2xl" data-aos="fade-right" alt="Decor Image">
+    <img src="photos/DSC01711.jpg" class="absolute top-[140px] right-[15%] max-w-[220px] rounded-lg shadow-xl transition-transform duration-500 hover:scale-105 hover:shadow-2xl" data-aos="fade-left" alt="Glasses">
+    <img src="photos/DSC01612.jpg" class="rounded-lg shadow-xl w-[400px] h-[600px] object-cover transition-transform duration-500 hover:scale-105 hover:shadow-2xl" data-aos="zoom-in-up" alt="Hero Image">
+    <img src="photos/DSC01661.jpg" class="absolute bottom-10 right-[20%] w-[200px] h-[300px] rounded-lg shadow-xl transition-transform duration-500 hover:scale-105 hover:shadow-2xl" data-aos="fade-up" alt="Bride Dancing">
+  </section>
+
+  <!-- Intro -->
+  <section class="text-center max-w-3xl mx-auto py-20 px-6">
+    <h2 class="italic text-2xl mb-6" data-aos="fade-up" data-aos-duration="1000">Where love stories come to life.</h2>
+    <p class="text-lg" data-aos="fade-up" data-aos-delay="200">
+      We create unforgettable memories by capturing the most cherished moments. 
+      Our photographs showcase the beauty of emotions, traditions, and timeless stories. 
+      Discover the elegance in every frame and let us preserve your story with artistry and love.
+    </p>
+  </section>
+
+  <!-- Couples Grid -->
+  <section class="container mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Example Card -->
+      <div class="relative overflow-hidden rounded-xl shadow-lg transition transform hover:-translate-y-2 hover:shadow-2xl" data-aos="fade-up">
+        <img src="photos/DSC08344.jpeg" class="w-full rounded-lg transition-transform duration-500 hover:scale-105" alt="Ken & JJ">
+        <div class="p-4">
+          <h5 class="text-lg font-semibold">Ken & JJ</h5>
+          <p class="text-gray-600">Romantic wedding at Chicago Loft</p>
+        </div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-lg transition transform hover:-translate-y-2 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="100">
+        <img src="photos/DSC01730.jpg" class="w-full rounded-lg transition-transform duration-500 hover:scale-105" alt="Sofia & Alex">
+        <div class="p-4">
+          <h5 class="text-lg font-semibold">Sofia & Alex</h5>
+          <p class="text-gray-600">A breathtaking day at The Langham</p>
+        </div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-lg transition transform hover:-translate-y-2 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="200">
+        <img src="photos/DSC03633.jpeg" class="w-full rounded-lg transition-transform duration-500 hover:scale-105" alt="Brielle & Scott">
+        <div class="p-4">
+          <h5 class="text-lg font-semibold">Brielle & Scott</h5>
+          <p class="text-gray-600">Outdoor celebration at Morton Arboretum</p>
+        </div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-lg transition transform hover:-translate-y-2 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="300">
+        <img src="photos/DSC00758.JPG" class="w-full rounded-lg transition-transform duration-500 hover:scale-105" alt="Camilia & Alex">
+        <div class="p-4">
+          <h5 class="text-lg font-semibold">Camilia & Alex</h5>
+          <p class="text-gray-600">Garden vows at Lincoln Park</p>
+        </div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-lg transition transform hover:-translate-y-2 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="400">
+        <img src="photos/DSC00086.jpeg" class="w-full rounded-lg transition-transform duration-500 hover:scale-105" alt="Emma & Johnny">
+        <div class="p-4">
+          <h5 class="text-lg font-semibold">Emma & Johnny</h5>
+          <p class="text-gray-600">Classic ballroom wedding at Palmer House</p>
+        </div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-lg transition transform hover:-translate-y-2 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="500">
+        <img src="photos/_DSC4381.JPG" class="w-full rounded-lg transition-transform duration-500 hover:scale-105" alt="Natalie & Hal">
+        <div class="p-4">
+          <h5 class="text-lg font-semibold">Natalie & Hal</h5>
+          <p class="text-gray-600">Sunset vows by the Lake Michigan shoreline</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <section class="relative text-center text-white">
+    <img src="photos/DSC01703.jpg" alt="Showcase" class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105" data-aos="fade-zoom-in">
+    <div class="absolute inset-0 flex flex-col justify-center items-center" data-aos="fade-in" data-aos-duration="1200">
+      <p class="text-2xl font-medium drop-shadow-lg">
+        Headshots <br>
+        Family Photos <br>
+        Maternity <br>
+        Portraits <br>
+        <button class="relative bg-black text-white px-8 py-4 rounded-full text-lg font-semibold tracking-wide 
+  shadow-lg transition-all duration-500 overflow-hidden group hover:scale-105 mt-6">
+  <span class="relative z-10 group-hover:text-black">Book Your Date</span>
+  <span class="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0 rounded-full"></span>
+</button>
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="relative flex items-center justify-center text-center text-black py-32 min-h-screen overflow-hidden">
+    <div class="container relative">
+      <div id="testimonial-carousel" class="relative">
+        <div class="testimonial active text-xl italic max-w-2xl mx-auto">
+          <p>“Absolutely amazing photography! Every moment was captured perfectly.”</p>
+          <span class="block mt-6 text-lg font-semibold">— Sarah & Michael</span>
+        </div>
+        <div class="testimonial text-xl italic max-w-2xl mx-auto">
+          <p>“Professional, creative, and friendly — our pictures are priceless.”</p>
+          <span class="block mt-6 text-lg font-semibold">— Emily R.</span>
+        </div>
+        <div class="testimonial text-xl italic max-w-2xl mx-auto">
+          <p>“They made us feel so comfortable, and the results are stunning.”</p>
+          <span class="block mt-6 text-lg font-semibold">— Daniel & Priya</span>
+        </div>
+        <div class="testimonial text-xl italic max-w-2xl mx-auto">
+          <p>“I can’t recommend them enough. Memories beautifully preserved.”</p>
+          <span class="block mt-6 text-lg font-semibold">— Jessica W.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work With Us -->
+  <section class="relative bg-black text-white text-center py-24 rounded-t-[0px] shadow-2xl -mt-20 z-20">
+    <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">WORK WITH US</h2>
+    <p class="text-lg mb-10 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+      We’re here to capture your most cherished moments. Book a consultation below to begin your journey.
+    </p>
+    <form class="max-w-xl mx-auto space-y-6 text-left" data-aos="fade-up" data-aos-delay="200">
+      <div>
+        <label class="block mb-2">Name</label>
+        <input type="text" class="w-full px-4 py-2 rounded-md text-black border focus:ring-2 focus:ring-black transition"/>
+      </div>
+      <div>
+        <label class="block mb-2">Email Address</label>
+        <input type="email" class="w-full px-4 py-2 rounded-md text-black border focus:ring-2 focus:ring-black transition"/>
+      </div>
+      <div>
+        <label class="block mb-2">Phone Number</label>
+        <input type="text" class="w-full px-4 py-2 rounded-md text-black border focus:ring-2 focus:ring-black transition"/>
+      </div>
+      <div>
+        <label class="block mb-2">Message</label>
+        <textarea rows="4" class="w-full px-4 py-2 rounded-md text-black border focus:ring-2 focus:ring-black transition"></textarea>
+      </div>
+      <button class="bg-white text-black px-6 py-3 rounded-lg text-lg transition-transform duration-300 hover:scale-105 hover:bg-gray-200">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <section class="py-16">
+    <div class="flex justify-center gap-4 mb-10 flex-wrap">
+      <img src="photos/DSC09104-Enhanced-NR.jpg" class="w-[260px] rounded-lg transition-transform duration-500 hover:scale-105 hover:shadow-xl">
+      <img src="photos/DSC09119.jpg" class="w-[260px] rounded-lg transition-transform duration-500 hover:scale-105 hover:shadow-xl">
+      <img src="photos/IMG_5559.JPG" class="w-[260px] rounded-lg transition-transform duration-500 hover:scale-105 hover:shadow-xl">
+      <img src="photos/DSC07689.jpg" class="w-[260px] rounded-lg transition-transform duration-500 hover:scale-105 hover:shadow-xl">
+      <img src="photos/DSC06172-2.jpg" class="w-[260px] rounded-lg transition-transform duration-500 hover:scale-105 hover:shadow-xl">
+    </div>
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between gap-8 px-6">
+      <div>
+        <h6 class="font-bold mb-3">Get in Touch</h6>
+        <ul>
+          <li>Email: info@example.com</li>
+          <li>Phone: +1 234 567 890</li>
+          <li>Instagram: @yourpage</li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="font-bold mb-3">Navigation</h6>
+        <ul>
+          <li>Home</li>
+          <li>Our Work</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/3">
+        <h6 class="font-bold mb-3">Subscribe</h6>
+        <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded-md border mb-3 focus:ring-2 focus:ring-black transition">
+        <button class="bg-black text-white px-4 py-2 w-full rounded-md transition-transform duration-300 hover:scale-105 hover:bg-gray-800">Sign Up</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 900, easing: 'ease-in-out', once: false, mirror: true });
+    const testimonials = document.querySelectorAll(".testimonial");
+    let index = 0;
+    setInterval(() => {
+      testimonials[index].classList.remove("active");
+      index = (index + 1) % testimonials.length;
+      testimonials[index].classList.add("active");
+    }, 4000);
+  </script>
+</body>
+</html>
