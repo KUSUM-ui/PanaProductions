@@ -45,5 +45,23 @@ for (const link of links){
     }
   });
 }
+const hero = document.querySelector(".hero");
+const images = [
+  "./pic1.jpg",
+  "./pic2.jpg",
+  "./pic3.JPG"
+];
+
+let current = 0;
+
+function changeBackground() {
+  hero.style.setProperty("--bg-image", `url(${images[current]})`);
+  hero.style.backgroundImage = `url(${images[current]})`;
+  current = (current + 1) % images.length;
+}
+
+setInterval(changeBackground, 5000); // change every 5 sec
+changeBackground(); // load first image
+
 
 
