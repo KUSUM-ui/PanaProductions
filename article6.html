@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Section</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      background: #fff;
+      color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2.5fr;
+      gap: 60px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: sticky;
+      top: 100px; /* distance from top */
+      align-self: start;
+      height: fit-content;
+    }
+
+    .sidebar h2 {
+      font-style: italic;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .sidebar p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .sidebar .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border: 1px solid #000;
+      text-decoration: none;
+      font-size: 0.9rem;
+      color: #000;
+      transition: 0.3s;
+      margin-bottom: 30px;
+    }
+
+    .sidebar .btn:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 15px;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .sidebar ul li:hover {
+      text-decoration: underline;
+    }
+
+    /* Blog Section */
+    .blog-section {
+      margin-top: 0;
+    }
+
+    .blog-section .main-heading {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: left;
+      letter-spacing: 1px;
+    }
+
+    .blog-section article {
+      margin-bottom: 60px;
+    }
+
+    .blog-section h3 {
+      text-align: center;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      padding: 12px 0;
+      margin-bottom: 20px;
+    }
+
+    .blog-section p {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .blog-section p strong {
+      font-weight: bold;
+    }
+
+    .blog-section img {
+      width: 100%;
+      border-radius: 4px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>PANA PRODUCTION</h2>
+      <p>Based in Kathmandu and photographing celebrations across the globe, we are a team of talented photographers dedicated to capturing the heart of your story.</p>
+      <a href="#" class="btn">More about us →</a>
+
+      <ul>
+        <li>📷 Instagram</li>
+        <li>🎵 TikTok</li>
+        <li>🛍 Our Offerings</li>
+        <li>❤️ Work With Us</li>
+      </ul>
+    </aside>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+      <h1 class="main-heading">How Color Grading Brings Stories to Life</h1>
+      <img src="./images/DSC00325.jpeg" alt="Wedding Photography">
+      <p>In filmmaking and videography, color is far more than aesthetics — it’s a powerful tool that shapes emotion, mood, and storytelling. At Pana Production, we use color grading to transform ordinary footage into cinematic experiences that resonate deeply with viewers.</p><!-- Added Blog Heading -->
+
+      <article>
+        <h3>1. Setting the Mood</h3>
+        <p>Colors evoke emotion. Warm tones can create intimacy and romance, while cool tones evoke calm or melancholy. Thoughtful color grading ensures that every frame reflects the feeling you want your audience to experience, enhancing the story without words.</p>
+        <img src="./images/56FC2577-AB1B-48CF-B929-087CBA3CF7C4.jpg" alt="Wedding Photography">
+      </article>
+
+      <article>
+        <h3>2. Consistency Across Scenes</h3>
+        <p>A cohesive color palette ties together different shots and locations, creating a seamless visual narrative. Whether it’s a wedding film spanning multiple venues or a commercial shot in various environments, grading ensures every scene feels like part of a unified story.</p>
+        <img src="./images/31800AE9-DF80-42E1-B39A-9E890C08C472.jpg" alt="Wedding Photography">
+      </article>
+      <article>
+        <h3>3. Highlighting Details and Focus</h3>
+        <p>Color grading helps draw attention to key elements within a frame. From the sparkle of a bride’s jewelry to the textures of a product in a commercial, subtle adjustments guide the viewer’s eyes and enhance the impact of each shot.</p>
+        <img src="./images/197ED707-71A2-4EC6-87A9-1F6A468DC162.jpg" alt="Wedding Photography">
+      </article>
+      <article>
+        <h3>4. Creating a Signature Style</h3>
+        <p>Every filmmaker or studio has a distinct visual signature. Through color grading, we craft a unique look that aligns with the brand or narrative, making each video unmistakably ours while maintaining elegance and professionalism.</p>
+        <img src="./images/7CFAEA9F-7CF1-4B12-8CEB-D0247B18D47F.jpg" alt="Wedding Photography">
+      </article>
+      <h3>5. Enhancing Storytelling Beyond Reality</h3>
+        <p>Sometimes, real life isn’t enough to convey the story’s depth. Color grading allows us to amplify moods, dramatize moments, and turn footage into art, bridging the gap between reality and cinematic imagination.</p>
+        <img src="./images/7CFAEA9F-7CF1-4B12-8CEB-D0247B18D47F.jpg" alt="Wedding Photography">
+      </article>
+      <h1 class="main-heading">With color grading, every frame becomes more than an image — it becomes a story, a mood, and an emotion that lingers long after the screen fades.</h1>
+    </section>
+  </div>
+</body>
+</html>

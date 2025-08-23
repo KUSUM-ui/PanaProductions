@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Section</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      background: #fff;
+      color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2.5fr;
+      gap: 60px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: sticky;
+      top: 100px; /* distance from top */
+      align-self: start;
+      height: fit-content;
+    }
+
+    .sidebar h2 {
+      font-style: italic;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .sidebar p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .sidebar .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border: 1px solid #000;
+      text-decoration: none;
+      font-size: 0.9rem;
+      color: #000;
+      transition: 0.3s;
+      margin-bottom: 30px;
+    }
+
+    .sidebar .btn:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 15px;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .sidebar ul li:hover {
+      text-decoration: underline;
+    }
+
+    /* Blog Section */
+    .blog-section {
+      margin-top: 0;
+    }
+
+    .blog-section .main-heading {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: left;
+      letter-spacing: 1px;
+    }
+
+    .blog-section article {
+      margin-bottom: 60px;
+    }
+
+    .blog-section h3 {
+      text-align: center;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      padding: 12px 0;
+      margin-bottom: 20px;
+    }
+
+    .blog-section p {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .blog-section p strong {
+      font-weight: bold;
+    }
+
+    .blog-section img {
+      width: 100%;
+      border-radius: 4px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>PANA PRODUCTION</h2>
+      <p>Based in Kathmandu and photographing celebrations across the globe, we are a team of talented photographers dedicated to capturing the heart of your story.</p>
+      <a href="#" class="btn">More about us →</a>
+
+      <ul>
+        <li>📷 Instagram</li>
+        <li>🎵 TikTok</li>
+        <li>🛍 Our Offerings</li>
+        <li>❤️ Work With Us</li>
+      </ul>
+    </aside>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+      <h1 class="main-heading">Behind-the-Scenes of a Commercial Shoot</h1>
+      <img src="./images/DSC00325.jpeg" alt="Wedding Photography">
+      <p>Commercial shoots are more than just lights, cameras, and props — they are a symphony of creativity, precision, and teamwork. At Pana Production, every commercial we create tells a story while reflecting the brand’s identity with elegance and cinematic finesse. Today, we take you behind the lens to see how a commercial comes to life.</p><!-- Added Blog Heading -->
+
+      <article>
+        <h3>Planning: The Blueprint of Creativity</h3>
+        <p>Before a single frame is captured, hours are spent in planning. From concept development to storyboarding, location scouting, and lighting design, every detail is meticulously curated. A well-thought-out plan ensures that the final visuals feel effortless while staying true to the brand’s vision.</p>
+        <img src="./images/56FC2577-AB1B-48CF-B929-087CBA3CF7C4.jpg" alt="Wedding Photography">
+      </article>
+
+      <article>
+        <h3>The Set: Where Magic Happens</h3>
+        <p>Once on set, energy and focus collide. Our team orchestrates camera angles, lighting setups, and props while ensuring the cast feels comfortable and confident. It’s in these moments — between takes and spontaneous improvisation — that authentic, cinematic shots are born.</p>
+        <img src="./images/31800AE9-DF80-42E1-B39A-9E890C08C472.jpg" alt="Wedding Photography">
+      </article>
+      <article>
+        <h3>Capturing Moments, Not Just Scenes</h3>
+        <p>A commercial isn’t just about showcasing a product; it’s about capturing emotions and stories. Whether it’s a genuine reaction from an actor, a perfectly timed interaction, or subtle movements in a scene, we aim to immortalize the essence of the narrative.</p>
+        <img src="./images/197ED707-71A2-4EC6-87A9-1F6A468DC162.jpg" alt="Wedding Photography">
+      </article>
+      <article>
+        <h3>Collaboration: The Heart of Production</h3>
+        <p>Behind every successful shoot is a collaborative effort. Directors, cinematographers, stylists, lighting experts, and the client all work together. This synergy is what transforms technical execution into visual storytelling that feels natural and luxurious.</p>
+        <img src="./images/7CFAEA9F-7CF1-4B12-8CEB-D0247B18D47F.jpg" alt="Wedding Photography">
+      </article>
+      <article>
+        <h3>Post-Production: Refining the Vision</h3>
+        <p>Even after the cameras stop rolling, the work continues. Color grading, editing, sound design, and visual effects bring the commercial to life. The result? A polished, cinematic masterpiece that elevates the brand and resonates with its audience.</p>
+        <img src="./images/7CFAEA9F-7CF1-4B12-8CEB-D0247B18D47F.jpg" alt="Wedding Photography">
+      </article>
+      <h1 class="main-heading">From planning to the final frame, every commercial we craft at Pana Production is a story told with precision, creativity, and heart.</h1>
+    </section>
+  </div>
+</body>
+</html>
