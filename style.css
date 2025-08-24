@@ -52,7 +52,7 @@ a{color:inherit; text-decoration:none}
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: black;
   }
   
   .hero::before {
