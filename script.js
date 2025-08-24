@@ -49,7 +49,7 @@ const hero = document.querySelector(".hero");
 const images = [
   "./pic1.jpg",
   "./pic1.jpg",
-  "./pic1.JPG"
+  "./pic1.jpg"
 ];
 
 let current = 0;

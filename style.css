@@ -49,10 +49,11 @@ a{color:inherit; text-decoration:none}
     height: 100vh;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     text-align: center;
     color: black;
+    font: JetBrains Mono;
   }
   
   .hero::before {
@@ -80,6 +81,31 @@ a{color:inherit; text-decoration:none}
     position: relative;
     z-index: 1;
   }
+
+  .quote-card {
+    grid-column: span 2; /* makes it stretch across 2 columns in your grid */
+    background: #fafafa;
+    padding: 2rem;
+    border-left: 4px solid #d4af37; /* gold accent */
+    font-style: italic;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    margin: 1rem 0;
+    border-radius: 12px;
+  }
+  
+  .quote-card blockquote {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .quote-card cite {
+    display: block;
+    font-size: 0.95rem;
+    color: #666;
+    text-align: right;
+  }
+  
   
 
 /* ===== Work Grid ===== */
@@ -88,18 +114,18 @@ a{color:inherit; text-decoration:none}
 .grid{display:grid}
 .card{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:#fff}
 .card-media{overflow:hidden}
-.ratio-16x9{position:relative; padding-top:56.25%}
+.ratio-16x9{position:relative; padding-top:45%}
 .ratio-16x9>img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .5s ease}
 .card:hover .ratio-16x9>img{transform:scale(1.05)}
 .card-body{padding:16px}
 .card-title{margin:0 0 6px; font-weight:600}
 .card-meta{margin:0; color:var(--muted)}
 
-/* Make a masonry-like layout */
-.projects>.project:nth-child(1){grid-column:span 6}
-.projects>.project:nth-child(2){grid-column:span 6}
-.projects>.project:nth-child(3){grid-column:span 5}
-.projects>.project:nth-child(4){grid-column:span 7}
+/* Smaller cards in the work grid */
+.projects>.project:nth-child(1){grid-column:span 4}
+.projects>.project:nth-child(2){grid-column:span 4}
+.projects>.project:nth-child(3){grid-column:span 4}
+.projects>.project:nth-child(4){grid-column:span 4}
 
 /* ===== About ===== */
 .section-about{background:#fafbfc; border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
