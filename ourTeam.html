@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Our Team | Photography</title>
+  <meta name="description" content="Portfolio homepage showcasing design work, case studies, and contact information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./images/logo.png" />
+  
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">VS</span>
+        <span class="brand-text">VIBESHOTS</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu">
+          <span class="nav-bar"></span>
+          <span class="nav-bar"></span>
+          <span class="nav-bar"></span>
+        </button>
+        <ul id="primary-menu" class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./ourTeam.html">About</a></li>
+          <li><a href="./Services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./portfolio.html">Our work</a></li>
+          <li><a href="./contact-us.html" class="btn btn--small">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,6 +50,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
+    /* ===== Header ===== */
+.site-header{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.8); backdrop-filter:saturate(180%) blur(12px); border-bottom:1px solid var(--line)}
+.header-inner{display:flex; align-items:center; justify-content:space-between; padding:16px 0}
+.brand{display:flex; align-items:center; gap:12px; font-weight:600}
+.brand-mark{display:grid; place-items:center; width:36px; height:36px; border-radius:50%; background:var(--text); color:#fff; font-weight:700}
+.brand-text{letter-spacing:.02em}
+
+.nav-toggle{display:none; background:none; border:0; padding:6px; cursor:pointer}
+.nav-bar{display:block; width:22px; height:2px; background:var(--text); margin:5px 0; transition:transform .25s ease}
+.menu{display:flex; gap:28px; align-items:center; list-style:none; margin:0; padding:0}
+.menu a{color:var(--text); opacity:.8}
+.menu a:hover{opacity:1}
+
+.btn{display:inline-block; padding:12px 18px; border-radius:999px; background:var(--text); color:#fff; box-shadow:var(--shadow); transition:transform .05s ease, opacity .2s}
+.btn:active{transform:translateY(1px)}
+.btn--ghost{background:transparent; color: white; border:1px solid var(--line)}
+.btn--small{padding:10px 14px}
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #fff;

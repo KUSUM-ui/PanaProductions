@@ -2,8 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio | Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Work | Photography</title>
+  <meta name="description" content="Portfolio homepage showcasing design work, case studies, and contact information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./images/logo.png" />
+  
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">VS</span>
+        <span class="brand-text">VIBESHOTS</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu">
+          <span class="nav-bar"></span>
+          <span class="nav-bar"></span>
+          <span class="nav-bar"></span>
+        </button>
+        <ul id="primary-menu" class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./ourTeam.html">About</a></li>
+          <li><a href="./Services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./portfolio.html">Our work</a></li>
+          <li><a href="./contact-us.html" class="btn btn--small">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>

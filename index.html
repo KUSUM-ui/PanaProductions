@@ -34,11 +34,11 @@
         </button>
         <ul id="primary-menu" class="menu">
           <li><a href="./index.html">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="Blog">Blog</a></li>
-          <li><a href="Blog">Blog</a></li>
-          <li><a href="#contact" class="btn btn--small">Contact</a></li>
+          <li><a href="./ourTeam.html">About</a></li>
+          <li><a href="./Services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./portfolio.html">Our work</a></li>
+          <li><a href="./contact-us.html" class="btn btn--small">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -67,13 +67,13 @@
     <div class="container">
       <div class="section-head">
         <h2 id="work-title" class="section-title">Our Work</h2>
-        <a href="#" class="link">View our work →</a>
+        <a href="./portfolio.html" class="link">View our work →</a>
       </div>
 
       <div class="grid projects">
         <!-- Project Card 1 -->
         <article class="card project">
-          <a href="#" class="card-link" aria-label="Open case study: Atelier Identity">
+          <a href="./Services.html" class="card-link" aria-label="Open case study: Atelier Identity">
             <div class="card-media ratio-16x9">
               <img src="./images/pic2.jpg" alt="Monochrome logotype on textured paper" loading="lazy" />
             </div>
@@ -86,7 +86,7 @@
 
         <!-- Project Card 2 -->
         <article class="card project">
-          <a href="#" class="card-link" aria-label="Open case study: Maison E‑commerce">
+          <a href="./portfolio.html" class="card-link" aria-label="Open case study: Maison E‑commerce">
             <div class="card-media ratio-16x9">
               <img src="./images/pic4.jpg" alt="Elegant" loading="lazy" />
             </div>
@@ -99,7 +99,7 @@
 
         <!-- Project Card 3 -->
         <article class="card project">
-          <a href="#" class="card-link" aria-label="Open case study: Serein App">
+          <a href="./Services.html" class="card-link" aria-label="Open case study: Serein App">
             <div class="card-media ratio-16x9">
               <img src="./images/pic3.JPG" alt="Mobile app screens on neutral background" loading="lazy" />
             </div>
@@ -112,7 +112,7 @@
 
         <!-- Project Card 4 -->
         <article class="card project">
-          <a href="#" class="card-link" aria-label="Open case study: Editorial Lookbook">
+          <a href="./portfolio.html" class="card-link" aria-label="Open case study: Editorial Lookbook">
             <div class="card-media ratio-16x9">
               <img src="./images/pic5.jpg" alt="Minimal editorial layout" loading="lazy" />
             </div>
@@ -153,7 +153,7 @@
           <li>Lens and creativity</li>
           <li>Art direction & editorial</li>
         </ul>
-        <a href="#contact" class="btn">Contact Us</a>
+        <a href="./contact-us.html" class="btn">Contact Us</a>
       </div>
     </div>
   </section>
@@ -179,7 +179,7 @@
           <h3 class="card-title">Videography</h3>
           <p>Capturing candid laughs, joy and playfulness.</p>
         </article>
-        <a href="#services" class="btn">View in detail</a>
+        <a href="./Services.html" class="btn">View in detail</a>
       </div>
     </div>
   </section>
@@ -218,20 +218,33 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="brand-mark">LA</span>
-        <span>© <span id="year"></span> VIBESHOTS. All rights reserved.</span>
+   <!-- Footer -->
+   <section class="py-16">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between gap-8 px-6">
+      <div>
+        <h6 class="font-bold mb-3">Get in Touch</h6>
+        <ul>
+          <li>Email: info@example.com</li>
+          <li>Phone: +1 234 567 890</li>
+          <li>Instagram: @yourpage</li>
+        </ul>
       </div>
-      <ul class="social">
-        <li><a href="#" aria-label="Instagram">Instagram</a></li>
-        <li><a href="#" aria-label="Dribbble">Dribbble</a></li>
-        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
-      </ul>
+      <div>
+        <h6 class="font-bold mb-3">Navigation</h6>
+        <ul>
+          <li>Home</li>
+          <li>Our Work</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/3">
+        <h6 class="font-bold mb-3">Subscribe</h6>
+        <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded-md border mb-3 focus:ring-2 focus:ring-black transition">
+        <button class="bg-black text-white px-4 py-2 w-full rounded-md transition-transform duration-300 hover:scale-105 hover:bg-gray-800">Sign Up</button>
+      </div>
     </div>
-  </footer>
+  </section>
 
   <script src="./script.js"></script>
 </body>
