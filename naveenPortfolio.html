@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naveen | Backend Developer & Photographer</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      scroll-behavior: smooth;
+    }
+
+    /* Moving gradient background */
+    .hero-bg {
+      background: linear-gradient(-45deg, #0d0d0d, #1a1a1a, #222, #111);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .project-card {
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Masonry layout for photography */
+    .masonry {
+      column-count: 3;
+      column-gap: 1rem;
+    }
+    .masonry img {
+      width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      display: block;
+      break-inside: avoid;
+    }
+    @media (max-width: 768px) {
+      .masonry {
+        column-count: 2;
+      }
+    }
+    @media (max-width: 500px) {
+      .masonry {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-black">
+
+  <!-- Hero -->
+  <section class="hero-bg h-screen flex items-center justify-center text-center px-6" id="home">
+    <div data-aos="fade-up">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Backend Developer & Photographer</h1>
+      <p class="text-lg text-gray-400 mb-6">Exploring tech with Django • Capturing life through lenses</p>
+      <a href="#projects" class="bg-indigo-600 px-6 py-3 rounded-full text-white font-semibold hover:bg-indigo-500 transition">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 container mx-auto px-6">
+    <div class="md:grid md:grid-cols-2 gap-12 items-center" data-aos="fade-right">
+      <img src="PanaProductions/photos/DSC_4178-Enhanced-NR.jpg" alt="profile" class="rounded-2xl shadow-lg">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-gray-400 mb-4">
+          I am a passionate backend developer specializing in <span class="text-indigo-400">Django</span>.
+          With a love for minimalism and dark themes, I enjoy building systems that are efficient, scalable, and beginner-friendly.
+          Outside of coding, I am a photographer who finds beauty in raw, real moments.
+        </p>
+        <p class="text-gray-400">Not introverted, just someone who speaks only when necessary. My work speaks louder.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-[#111]">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="project-card bg-[#1a1a1a] rounded-xl shadow-lg p-6" data-aos="zoom-in">
+          <h3 class="text-xl font-semibold mb-3">Django Blog App</h3>
+          <p class="text-gray-400 mb-4">A beginner-friendly blog platform built with Django, featuring user authentication & CRUD posts.</p>
+          <a href="https://github.com/placeholder" target="_blank" class="text-indigo-400 hover:underline">View on GitHub</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card bg-[#1a1a1a] rounded-xl shadow-lg p-6" data-aos="zoom-in" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-3">Inventory API</h3>
+          <p class="text-gray-400 mb-4">A RESTful inventory management API built with Django REST Framework.</p>
+          <a href="https://github.com/placeholder" target="_blank" class="text-indigo-400 hover:underline">View on GitHub</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card bg-[#1a1a1a] rounded-xl shadow-lg p-6" data-aos="zoom-in" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-3">Portfolio Backend</h3>
+          <p class="text-gray-400 mb-4">Backend system powering my personal portfolio site with Django + SQLite.</p>
+          <a href="https://github.com/placeholder" target="_blank" class="text-indigo-400 hover:underline">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photography -->
+  <section id="photography" class="py-20 container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Photography</h2>
+    <div class="masonry">
+      <img src="PanaProductions/photos/DSC01703.jpg" alt="photo" data-aos="fade-up">
+      <img src="PanaProductions/photos/DSC06172-2.jpg" alt="photo" data-aos="fade-up" data-aos-delay="100">
+      <img src="PanaProductions/photos/DSC07689.jpg" alt="photo" data-aos="fade-up" data-aos-delay="200">
+      <img src="PanaProductions/photos/DSC01677.jpg" alt="photo" data-aos="fade-up" data-aos-delay="200">
+      <img src="PanaProductions/photos/DSC01612.jpg" alt="photo" data-aos="fade-up" data-aos-delay="200">
+      <img src="PanaProductions/photos/DSC09390.jpg" alt="photo" data-aos="fade-up" data-aos-delay="200">
+      <img src="PanaProductions/photos/IMG_20250203_103249.jpg" alt="photo" data-aos="fade-up" data-aos-delay="200">
+      <img src="PanaProductions/photos/DSC09104-Enhanced-NR.jpg" alt="photo" data-aos="fade-up" data-aos-delay="200">
+      <img src="PanaProductions/photos/DSC06267.jpg" alt="photo" data-aos="fade-up" data-aos-delay="200">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-[#111] text-center">
+    <div class="container mx-auto px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+      <p class="text-gray-400 mb-6">Whether it’s about backend projects, Django, or photography, feel free to reach out.</p>
+      <a href="mailto:naveensubedi1@gmail.com" class="bg-indigo-600 px-6 py-3 rounded-full text-white font-semibold hover:bg-indigo-500 transition">Say Hello</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-black text-center text-gray-500 text-sm">
+    © 2025 Naveen | Built with ❤️ in Django & Tailwind
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+</body>
+</html>
